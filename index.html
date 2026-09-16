@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Laukendra Singh — Mobile App Developer specializing in Android, Flutter, IoT and backend systems.">
+<title>Laukendra Singh | Mobile App Developer</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#080b14;color:#f7f8fc;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:1160px;width:calc(100% - 32px);margin:auto}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #202637;position:sticky;top:0;background:#080b14e8;backdrop-filter:blur(14px);z-index:5}
+.logo{font-size:25px;font-weight:800}.logo span,.accent{color:#8d82ff}.links{display:flex;gap:25px;font-size:13px;color:#9da5b7}.links a:hover{color:#fff}
+.hero{padding:95px 0 80px;border-bottom:1px solid #202637}.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center}
+.badge{display:inline-block;padding:6px 10px;border:1px solid #2a3348;border-radius:20px;color:#aab1c2;font-size:11px;margin-bottom:20px}
+h1{font-size:clamp(44px,6vw,72px);line-height:1.02;letter-spacing:-3px;margin:0}h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-1.7px;margin:0 0 35px}
+.lead{color:#a7afc0;max-width:650px;font-size:17px;margin:24px 0 30px}.buttons{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:12px 17px;border-radius:9px;border:1px solid #30384b;font-size:13px;font-weight:700}.primary{background:#fff;color:#080b14;border-color:#fff}.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:25px;color:#778197;font-size:11px}
+.code{background:#0d111b;border:1px solid #293144;border-radius:15px;overflow:hidden;box-shadow:0 25px 70px #0006}.bar{padding:12px 15px;border-bottom:1px solid #242b3c;color:#687288;font-size:10px}.dots{letter-spacing:5px}.code pre{padding:22px;margin:0;font-size:12px;line-height:1.9;color:#dfe4ef;overflow:auto}.code b{color:#a096ff}.code i{color:#63d8c8;font-style:normal}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:12px}.stats div{padding:14px;border:1px solid #293144;border-right:0;background:#0d111b}.stats div:first-child{border-radius:10px 0 0 10px}.stats div:last-child{border-right:1px solid #293144;border-radius:0 10px 10px 0}.stats strong{display:block;font-size:21px}.stats small{color:#707b90;font-size:9px}
+section{padding:95px 0;border-bottom:1px solid #202637}.alt{background:#0c1019}.kicker{color:#777f94;letter-spacing:2px;font-weight:800;font-size:10px;margin-bottom:14px}.twocol{display:grid;grid-template-columns:.75fr 1.25fr;gap:85px}.copy{color:#a7afc0;font-size:14px}.edu{margin-top:28px;display:grid;gap:15px}.edu div{border-left:2px solid #8d82ff;padding-left:13px}.edu strong{display:block;color:#fff;font-size:13px}.edu span{color:#788196;font-size:11px}
+.skills,.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#101522;border:1px solid #252d40;border-radius:13px;padding:22px}.card:hover{transform:translateY(-2px);border-color:#3b455e}.card{transition:.2s}.card h3{font-size:16px;margin:8px 0}.card p{color:#929caf;font-size:12px;margin:0}.icon{font-size:20px;color:#9d93ff}
+.timeline{border-top:1px solid #293144}.job{display:grid;grid-template-columns:210px 1fr;gap:35px;padding:28px 0;border-bottom:1px solid #293144}.job .date{font-size:11px;color:#737e93}.job h3{margin:0;font-size:18px}.company{color:#9d93ff;font-size:12px;margin:3px 0 10px}.job p:last-child{color:#929caf;font-size:12px;margin:0}
+.project-top{display:flex;justify-content:space-between;color:#69758b;font-size:10px}.tag{color:#9d93ff}.project h3{margin:20px 0 8px}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:18px}.chips span{border:1px solid #293144;border-radius:20px;padding:4px 7px;font-size:9px;color:#7f8a9f}
+.research{display:grid;gap:0;border-top:1px solid #293144}.paper{display:grid;grid-template-columns:170px 1fr 80px;gap:20px;padding:19px 0;border-bottom:1px solid #293144;font-size:12px}.paper small{color:#727d92}.paper em{color:#9d93ff;font-style:normal;font-size:10px}
+.contact{background:linear-gradient(120deg,#171a2b,#101522);border:1px solid #2a3348;border-radius:18px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact p{color:#929caf;font-size:13px}.contact h2{margin-bottom:5px}
+footer{padding:24px 0;color:#69758a;font-size:10px}.foot{display:flex;justify-content:space-between}
+@media(max-width:850px){.grid,.twocol{grid-template-columns:1fr}.skills,.projects{grid-template-columns:repeat(2,1fr)}.hero{padding:70px 0}.twocol{gap:35px}.contact{display:block}.contact .buttons{margin-top:20px}}
+@media(max-width:600px){.links{display:none}.skills,.projects{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:7px}.paper{grid-template-columns:1fr;gap:5px}.paper em{display:none}.stats{grid-template-columns:1fr}.stats div,.stats div:first-child,.stats div:last-child{border:1px solid #293144;border-radius:0}.stats div:first-child{border-radius:10px 10px 0 0}.stats div:last-child{border-radius:0 0 10px 10px}.contact{padding:28px}.foot{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%"><a class="logo" href="#">LS<span>.</span></a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="wrap grid">
+<div><div class="badge">● Available for professional opportunities</div><h1>Building reliable <span class="accent">mobile & IoT</span> experiences.</h1>
+<p class="lead">I'm Laukendra Singh, a Mobile App Developer with 10+ years of IT experience, specializing in Android, Flutter, Kotlin, Dart, APIs, databases and connected-device solutions.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View my work ↗</a><a class="btn" href="Laukendra-Singh-Resume.pdf" download>Download Resume</a></div>
+<div class="meta"><span>📍 Noida, India</span><a href="mailto:laukendra.singh.dev@gmail.com">✉ laukendra.singh.dev@gmail.com</a></div></div>
+<div><div class="code"><div class="bar"><span class="dots">● ● ●</span> &nbsp; developer_profile.dart</div><pre><b>class</b> Laukendra <b>extends</b> Developer {
+  <b>final</b> experience = <i>'10+ years'</i>;
+
+  <b>final</b> focus = [
+    <i>'Android'</i>, <i>'Flutter'</i>,
+    <i>'IoT'</i>, <i>'Backend'</i>
+  ];
+
+  <b>final</b> stack = [
+    <i>'Kotlin'</i>, <i>'Dart'</i>,
+    <i>'Java'</i>, <i>'Node.js'</i>,
+    <i>'MySQL'</i>, <i>'MongoDB'</i>
+  ];
+}</pre></div><div class="stats"><div><strong>10+</strong><small>Years IT</small></div><div><strong>20+</strong><small>Android apps</small></div><div><strong>500+</strong><small>POS customers</small></div></div></div>
+</div></header>
+
+<section id="about"><div class="wrap twocol"><div><div class="kicker">01 — ABOUT</div><h2>Engineering with a product mindset.</h2></div><div class="copy"><p>I am a seasoned software developer with substantial application-development experience and strong analytical and programming skills. I've worked in high-pressure environments, taken project-lead responsibilities and delivered customer-focused mobile solutions.</p><p>My experience spans Android application development, Flutter, POS systems, inventory management, fuel-delivery automation, offline-first applications, location services, Firebase, web services and database-driven products.</p><div class="edu"><div><strong>M.Tech (IT)</strong><span>University School of Information & Communication Technology, GGSIPU · 2013–2015</span></div><div><strong>B.Tech (CS)</strong><span>AMIETE, IETE Delhi · 2008–2012</span></div></div></div></div></section>
+
+<section id="skills" class="alt"><div class="wrap"><div class="kicker">02 — SKILLS</div><h2>Tools I use to turn ideas into products.</h2><div class="skills">
+<div class="card"><div class="icon">⌘</div><h3>Mobile</h3><p>Android, Kotlin, Java, Flutter, Dart, XML, MVVM, Data Binding</p></div>
+<div class="card"><div class="icon">◈</div><h3>State & APIs</h3><p>GetX, standard state management, Retrofit, REST APIs, JSON and Web Services</p></div>
+<div class="card"><div class="icon">▣</div><h3>Data</h3><p>MySQL, SQLite, Room, SharedPreferences, MongoDB and offline data</p></div>
+<div class="card"><div class="icon">⌁</div><h3>Connected Apps</h3><p>IoT, Bluetooth, Wi-Fi, NFC, GPS/location, thermal printing and FCM</p></div>
+<div class="card"><div class="icon">☁</div><h3>Cloud & Services</h3><p>Firebase Analytics, Realtime Database, authentication and cloud-connected apps</p></div>
+<div class="card"><div class="icon">◒</div><h3>Platforms</h3><p>macOS, Windows, Linux, Android Studio and VS Code</p></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><div class="kicker">03 — EXPERIENCE</div><h2>A decade of building mobile products.</h2><div class="timeline">
+<div class="job"><div class="date">Aug 2022 — Present</div><div><h3>Senior Software Developer & Team Lead</h3><div class="company">Synergy Teletech Pvt Ltd</div><p>Working on automation systems for fuel delivery assets and customer-focused mobile projects, including fuel-delivery and outlet-station applications.</p></div></div>
+<div class="job"><div class="date">Jul 2020 — Jul 2022</div><div><h3>Senior Mobile Application Developer</h3><div class="company">Saud Technologies & Consultancy Pvt Ltd</div><p>Built Android-based POS software from scratch and delivered it to 500+ customers in Saudi Arabia. Also developed Android and iOS inventory-management applications using Flutter.</p></div></div>
+<div class="job"><div class="date">Jul 2015 — Jul 2020</div><div><h3>Android Mobile Application Developer</h3><div class="company">Algosoft Apps Technologies Pvt Ltd</div><p>Delivered 20+ Android applications across education, location, construction, services, travel and social/productivity use cases.</p></div></div>
+</div></div></section>
+
+<section id="projects" class="alt"><div class="wrap"><div class="kicker">04 — SELECTED PROJECTS</div><h2>Products and systems I've worked on.</h2><div class="projects">
+<div class="card project"><div class="project-top"><span class="tag">Fuel Automation</span><span>01</span></div><h3>Synergy Drishti</h3><p>Fuel delivery and receiving application for outlet stations with dispenser/tank ATG status, cloud data and reporting.</p><div class="chips"><span>Android</span><span>IoT</span><span>Cloud</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">POS</span><span>02</span></div><h3>Amplify POS</h3><p>Android POS solution running in Saudi Arabia, plus a Flutter-based admin application.</p><div class="chips"><span>Android</span><span>Flutter</span><span>POS</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Fuel Delivery</span><span>03</span></div><h3>FillNow</h3><p>Customer ordering and duty-manager applications designed around automated fuel delivery workflows.</p><div class="chips"><span>Android</span><span>Flutter</span><span>APIs</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Field Operations</span><span>04</span></div><h3>FEAT</h3><p>Internal activity and checklist solution with image capture, location tracking and offline operation.</p><div class="chips"><span>Android</span><span>Offline</span><span>GPS</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Location</span><span>05</span></div><h3>Palfinder</h3><p>Location-sharing and chat application connecting users with loved ones using GPS/network location.</p><div class="chips"><span>Android</span><span>GPS</span><span>Chat</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Education</span><span>06</span></div><h3>OWN TV</h3><p>Education and entertainment platform with learning videos, quizzes and test papers.</p><div class="chips"><span>Android</span><span>Video</span><span>Quizzes</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Services</span><span>07</span></div><h3>Handyman</h3><p>End-to-end on-demand services demo covering consumer, provider and admin workflows.</p><div class="chips"><span>Android</span><span>Services</span><span>Admin</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Mobility</span><span>08</span></div><h3>Cabbee</h3><p>Passenger and driver applications for ride search, booking and professional-driver operations.</p><div class="chips"><span>Android</span><span>Maps</span><span>Booking</span></div></div>
+<div class="card project"><div class="project-top"><span class="tag">Retail</span><span>09</span></div><h3>MoneySaverz</h3><p>Local retail deals and discount aggregation platform for Delhi and NCR markets.</p><div class="chips"><span>Mobile</span><span>Deals</span><span>Location</span></div></div>
+</div></div></section>
+
+<section id="research"><div class="wrap"><div class="kicker">05 — RESEARCH</div><h2>Published work in security & cryptography.</h2><div class="research">
+<a class="paper" href="https://link.springer.com/chapter/10.1007/978-3-319-22915-7_21" target="_blank"><small>2015 · Springer</small><strong>Cross Language Cipher Technique</strong><em>View ↗</em></a>
+<a class="paper" href="https://ieeexplore.ieee.org/document/8229861" target="_blank"><small>2017 · IEEE</small><strong>SCLCT: Secured Cross Language Cipher Technique</strong><em>View ↗</em></a>
+<a class="paper" href="https://serialsjournals.com/abstract/37841_ch_45_f_-_221_-_sandeep_kumar.pdf" target="_blank"><small>2018 · Journal</small><strong>Comparative Analysis of Cryptography Cipher Techniques with CLCT Technique</strong><em>View ↗</em></a>
+<a class="paper" href="https://ijari.org/assets/conf/icari-2015/icari-2015-abstract.pdf" target="_blank"><small>2015 · ICARI</small><strong>Comparative Analysis of Cryptography Cipher Techniques</strong><em>View ↗</em></a>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact"><div><div class="kicker">06 — CONTACT</div><h2>Have a project in mind?</h2><p>Let's discuss mobile development, Flutter, Android, IoT or backend engineering.</p></div><div class="buttons"><a class="btn primary" href="mailto:laukendra.singh.dev@gmail.com">Email me</a><a class="btn" href="tel:+919555465323">Call me</a></div></div></section>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> Laukendra Singh</span><span>Mobile · Flutter · Android · IoT</span></div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body></html>
